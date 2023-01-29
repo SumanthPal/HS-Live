@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,15 +13,31 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage(
-              "/Users/sumanth/Programming-Apps/flutterProjects/HS-Live/sports_app/lib/img/Screen Shot 2023-01-17 at 11.03.41 AM.png"),
-          fit: BoxFit.cover,
-        ),
-      ),
-      child: Scaffold(),
+    return const Scaffold(
+      bottomNavigationBar: GNav(
+          backgroundColor: Colors.black,
+          color: Colors.white,
+          activeColor: Colors.white,
+          tabBackgroundColor: Colors.grey,
+          rippleColor: Colors.white,
+          tabs: [
+            GButton(
+              icon: Icons.home,
+              text: 'Home',
+            ),
+            GButton(
+              icon: Icons.search,
+              text: 'Search',
+            ),
+            GButton(
+              icon: Icons.calendar_month,
+              text: 'Calendar',
+            ),
+            GButton(
+              icon: Icons.favorite,
+              text: 'Favorites',
+            ),
+          ]),
     );
   }
 }
