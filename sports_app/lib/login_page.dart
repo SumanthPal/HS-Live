@@ -13,8 +13,7 @@ class _LoginPageState extends State<LoginPage> {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(
-              "/Users/sumanth/Programming-Apps/flutterProjects/HS-Live/sports_app/lib/img/Screen Shot 2023-01-18 at 10.56.24 AM.png"),
+          image: AssetImage("/Users/vasurao/Downloads/picture1.png"),
           fit: BoxFit.cover,
         ),
       ),
@@ -27,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(height: 10.0),
                 Container(
                   child: Image.asset(
-                    "/Users/sumanth/Programming-Apps/flutterProjects/HS-Live/sports_app/lib/img/Screen Shot 2023-01-17 at 6.13.49 PM.png",
+                    "/Users/vasurao/Downloads/picture1.png",
                     height: 150,
                     width: 200,
                   ),

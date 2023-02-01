@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
       decoration: const BoxDecoration(
         image: DecorationImage(
           image: AssetImage(
-              "/Users/sumanth/Programming-Apps/flutterProjects/HS-Live/sports_app/lib/img/Screen Shot 2023-01-17 at 11.03.41 AM.png"),
+              "/Users/vasurao/Developer/HS-Live/HS-Live/sports_app/lib/img/Screen Shot 2023-01-17 at 11.03.41 AM.png"),
           fit: BoxFit.cover,
         ),
       ),

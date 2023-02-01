@@ -2,7 +2,9 @@
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
+import 'package:imaginecup/Screens/signin_screen.dart';
 import 'package:imaginecup/login_page.dart';
+import 'package:imaginecup/utils/color_utils.dart';
 
 class landingPage extends StatefulWidget {
   const landingPage({super.key});
@@ -15,11 +17,17 @@ class _landingPageState extends State<landingPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage(
-              "/Users/sumanth/Programming-Apps/flutterProjects/HS-Live/sports_app/lib/img/Screen Shot 2023-01-17 at 11.03.41 AM.png"),
-          fit: BoxFit.cover,
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            hexStringToColor("#e6f0e7"),
+            hexStringToColor("#cbdbcd"),
+            hexStringToColor("#c0d4c3"),
+            hexStringToColor("#b6ceb8"),
+            hexStringToColor("#abc5ae")
+          ],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
         ),
       ),
       child: Scaffold(
@@ -63,7 +71,7 @@ class _landingPageState extends State<landingPage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const LoginPage()),
+                            builder: (context) => const SignInScreen()),
                       );
                     },
                     child: Ink(
