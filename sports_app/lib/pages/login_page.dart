@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:imaginecup/pages/home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -110,7 +111,13 @@ class _LoginPageState extends State<LoginPage> {
                     Padding(
                       padding: const EdgeInsets.only(top: 20),
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const HomePage()),
+                          );
+                        },
                         style: ElevatedButton.styleFrom(
                           primary: const Color.fromARGB(255, 231, 82, 82),
                           onPrimary: Colors.white,

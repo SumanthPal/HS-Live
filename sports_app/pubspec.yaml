@@ -30,6 +30,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   swipe: ^0.0.1
+  persistent_bottom_nav_bar: ^5.0.2
   flutter:
     sdk: flutter
 
@@ -37,8 +38,6 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  google_fonts: ^4.0.1
-
 
 dev_dependencies:
   flutter_test:
@@ -64,17 +63,16 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-  - assets/images/
-  
-  # - /Users/vasurao/Developer/HS-Live/HS-Live/sports_app/lib/img/Screen Shot 2023-01-17 at 6.13.49 PM.png
-  # - /Users/vasurao/Developer/HS-Live/HS-Live/sports_app/lib/img/Screen Shot 2023-01-17 at 11.03.41 AM.png
-  # - /Users/vasurao/Developer/HS-Live/HS-Live/sports_app/lib/img/Screen Shot 2023-01-18 at 10.56.24 AM.png
+  - /Users/sumanth/Programming-Apps/flutterProjects/HS-Live/sports_app/lib/img/Screen Shot 2023-01-18 at 10.56.24 AM.png
+  - /Users/sumanth/Programming-Apps/flutterProjects/HS-Live/sports_app/lib/img/Screen Shot 2023-01-17 at 6.13.49 PM.png
+  - /Users/sumanth/Programming-Apps/flutterProjects/HS-Live/sports_app/lib/img/Screen Shot 2023-01-17 at 11.03.41 AM.png  
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
 
+  
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
